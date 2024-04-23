@@ -1,0 +1,129 @@
+body {
+    background-color: rgb(252, 249, 245);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 121, 121);
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.nav-container nav a {
+    flex: 1; 
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; 
+    height: 15px;
+    padding: 2rem;
+}
+
+nav a:hover {
+    background-color: #4b3737;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(102, 133, 199); 
+}
+
+.header-container img {
+    width: 150px;
+    height: 150px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 75px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h1 {
+    margin: 0 auto;
+    padding-top: 25px;
+    text-decoration: underline;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: rgb(98, 114, 184);
+    color: white;
+}
+
+.card ul {
+    list-style-type: none;
+}
+
+.card:nth-of-type(1) {
+    grid-column: span 2;
+  }
+  
+.card:nth-of-type(2) {
+    grid-column: span 1;
+}
+  
+.card:nth-of-type(3) {
+    grid-column: span 1;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card input {
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(226, 121, 121);
+    padding: 25px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    padding-right: 10px;
+}
