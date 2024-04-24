@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(252, 249, 245);
+    background-color: #f3e7d4;
+    font-family: "Trirong", serif;
 }
 
 nav {
@@ -7,7 +8,12 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(226, 121, 121);
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 0 auto;
+    background-color: #2a6592;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 nav a {
@@ -18,17 +24,17 @@ nav a {
 }
 
 .nav-container nav a {
-    flex: 1; 
+    flex: 1;
     text-align: center;
     color: #fff;
     text-decoration: none;
-    font-size: 18px; 
+    font-size: 18px;
     height: 15px;
     padding: 2rem;
 }
 
 nav a:hover {
-    background-color: #4b3737;
+    background-color: #1a3b55;
 }
 
 header {
@@ -37,14 +43,19 @@ header {
     align-items: center;
     flex-wrap: wrap;
     padding: 25px;
+    box-sizing: border-box;
 }
 
 .header-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    background-color: rgb(102, 133, 199); 
+    background-color: #8ec3eb;
+    width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 10px;
 }
 
 .header-container img {
@@ -55,22 +66,24 @@ header {
 img {
     max-width: 100%;
     height: auto;
-    margin-right: 75px;
+    margin-right: 100px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 main h1 {
-    margin: 0 auto;
-    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: underline;
+    color: #2a6592;
 }
 
 section {
@@ -84,22 +97,22 @@ section {
     padding: 20px;
     margin: 10px;
     box-sizing: border-box;
-    background-color: rgb(98, 114, 184);
-    color: white;
+    background-color: #2a6592;
+    color: #fff;
 }
 
-.card ul {
+.card:nth-of-type(1){
+    grid-column: span 2;
+}
+
+ul {
     list-style-type: none;
 }
 
-.card:nth-of-type(1) {
-    grid-column: span 2;
-  }
-  
 .card:nth-of-type(2) {
     grid-column: span 1;
 }
-  
+
 .card:nth-of-type(3) {
     grid-column: span 1;
 }
@@ -110,7 +123,8 @@ section {
 
 .card input {
     background-color: #fff;
-    border: 2px solid black;
+    border: 2px solid #8ec3eb;
+    font-family: "Trirong", serif;
 }
 
 footer {
@@ -118,12 +132,18 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgb(226, 121, 121);
-    padding: 25px;
+    background-color: #8ec3eb;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
     text-align: center;
     margin: 0;
-    padding-right: 10px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
 }
