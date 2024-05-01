@@ -12,7 +12,6 @@ body {
 body h1 {
     display: flex;
     justify-content: center;
-    color: #17B169;
     font-size: 45px;
     margin-bottom: 0;
     color: rgb(219, 134, 54);
@@ -120,6 +119,10 @@ body h1 {
     color: rgb(100, 14, 14);
 }
 
+#signup-button:hover {
+    background-color: rgba(176, 85, 16,  0.75);
+}
+
   .modal {
     display: none; 
     position: fixed; 
@@ -174,14 +177,14 @@ body h1 {
 .modal button[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #32de84;
+    background-color: rgb(129, 52, 52);
     color: white;
     border: none;
     cursor: pointer;
 }
 
 .modal button[type="submit"]:hover {
-    background-color: #28b47f;
+    background-color: rgb(100, 14, 14);
 }
 
 footer { 
