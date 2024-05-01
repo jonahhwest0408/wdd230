@@ -1,4 +1,4 @@
-/* Mobile view */
+
 @media (max-width: 767px) {
     header {
         font-size: 15px;
@@ -96,7 +96,7 @@
      }
    }
    
-   /* Large view */
+
    @media (min-width: 768px) {
     .nav {
        display: flex;
@@ -130,7 +130,7 @@
      }
    }
 
-   /* Mobile view */
+
 @media (max-width: 767px) {
     .close-button {
         display: block;
@@ -145,7 +145,7 @@
       }
     }
     
-    /* Large view */
+ 
     @media (min-width: 768px) {
     .close-button {
         display: none;
