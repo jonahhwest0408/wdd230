@@ -4,54 +4,68 @@
     font-size: 16px;
 }
 
-header {
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+  }
+
+
+  #main-nav {
+    display: none;
+  }
+
+  #main-nav.open {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+  }
+
+  #hamburger-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     padding: 1rem;
-}
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
 
-#main-nav {
-  display: none;
-}
+  #hamburger-button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+  }
 
-#main-nav.open {
-  display: flex;
-}
+  #close-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #000;
+  }
 
 
-#hamburger-button {
-  display: block;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 1rem;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-}
+  .card {
+      margin: 1rem;
+      padding: 1rem;
+      background: #f2f2f2;
+  }
 
-#hamburger-button span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #000;
-  margin: 5px 0;
-}
+  .card h2 {
+      margin-top: 0;
+  }
 
-.card {
-    margin: 1rem;
-    padding: 1rem;
-    background: #f2f2f2;
-}
-
-.card h2 {
-    margin-top: 0;
-}
-
-.card input {
-    margin-bottom: 1rem;
-}
+  .card input {
+      margin-bottom: 1rem;
+  }
 
   
   main {

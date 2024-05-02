@@ -15,7 +15,9 @@ header {
     flex-direction: row;
 }
 
-
+#hamburger-button {
+    display: block;
+}
 
 .card {
     margin: 2rem;
@@ -80,7 +82,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     background-color: #8ec3eb;
-    width: 800px;
+    max-width: 90vw;
     margin: 0 auto;
     color: #fff;
     border-radius: 10px;
