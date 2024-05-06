@@ -4,3 +4,19 @@ copyrightYear.textContent = `© ${currentYear} | Jonah West | Arizona, United St
 
 const lastModified = document.querySelector('#lastModified');
 lastModified.textContent = document.lastModified;
+
+function updatePageVisits() {
+    let pageVisits = localStorage.getItem('pageVisits')
+
+    if (!pageVisits) {
+        pageVisits = 0;
+    }
+
+    pageVisits++;
+
+    localStorage.setItem('pageVisits', pageVisits);
+
+    document.getElementById('page-visits').textContent = pageVisits;
+}
+
+window.onload = updatePageVisits;
