@@ -84,7 +84,7 @@ header {
     background-color: #8ec3eb;
     max-width: 90vw;
     margin: 0 auto;
-    color: #fff;
+    color: black;
     border-radius: 10px;
 }
 
@@ -211,7 +211,7 @@ footer {
 footer p {
     text-align: center;
     margin: 0;
-    color: #fff;
+    color: black;
     font-size: 16px;
     padding: 10px;
 }
