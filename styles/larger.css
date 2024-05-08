@@ -69,11 +69,28 @@
     font-size: 16px; 
     padding: 8px;
     left: 55%;
-}
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .photos img {
+    width: 100%; 
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
 
 @media screen and (min-width: 769px) {
   .temple-label {
-      left: 50%; /* Keeps the label centered horizontally */
+      left: 50%;
       transform: translateX(-50%) translateY(-50%);
   }
 }
