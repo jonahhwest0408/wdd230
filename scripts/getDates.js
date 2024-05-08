@@ -21,36 +21,24 @@ function updatePageVisits() {
 
 window.onload = updatePageVisits;
 
-// last visited modal
-var modal = document.getElementById("myModal");
-
-var span = document.getElementsByClassName("close")[0];
-
-var lastVisit = localStorage.getItem("lastVisit");
-
-if (lastVisit) {
-  var lastVisitDate = new Date(lastVisit);
-  var currentDate = new Date();
-  var timeDiff = Math.abs(currentDate.getTime() - lastVisitDate.getTime());
-  var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
-
-  var message = "";
-  if (diffDays == 1) {
-    message = "You last visited 1 day ago.";
-  } else {
-    message = "You last visited " + diffDays + " days ago.";
+// Check if the user has visited the site before
+if (!localStorage.lastVisitDate) {
+    // If not, set the current date as the last visit date
+    localStorage.lastVisitDate = new Date().toLocaleDateString();
   }
-
-  document.getElementById("last-visit-message").innerText = message;
-  document.getElementById("last-visit-date").innerText = lastVisitDate.toDateString();
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+  
+  // Get the last visit date from local storage
+  const lastVisitDate = localStorage.lastVisitDate;
+  
+  // Display the last visit date in the modal
+  document.getElementById('last-visit-date').textContent = lastVisitDate;
+  
+  // Show the modal to the user
+  const modal = document.getElementById('myModal');
+  modal.style.display = 'block';
+  
+  // Add an event listener to close the modal when the user clicks on the close button
+  const closeBtn = document.getElementsByClassName('close')[0];
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
