@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonah West - WDD 230 - Web Frontend Development Form Page</title>
+    <meta name="description" content="Jonah West's Web Development Course Assignment Portal">
+    <meta name="author" content="Jonah West">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" type="images/favicon.ico" href="images/favicon.ico">
+</head>
+<body>
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    <div class="header-container">
+        <header>
+            <img src="images/profile-pic.webp" alt="Jonah West Logo">
+            <h1>Jonah West</h1>
+            <button id="hamburger-button" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button id="close-button" aria-label="Close navigation menu" style="display: none;">X</button>
+        </header>
+    </div>
+    <div class="nav-container" id="main-nav">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="chamber/chamber-site-plan.html">Site Plan</a>
+            <a href="form.html">Form</a>
+        </nav>
+    </div>
+    <main>
+        <form action="record.html" method="get" onsubmit="return validateForm()">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and can only be alphanumeric" required>
+            </div>
+            <div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and can only be alphanumeric" required>
+                <span id="password_match_error" style="display:none; color:red;">Passwords do not match.</span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" title="Please enter a valid email address" required>
+            </div>
+            <div>
+                <label for="page_rating">Page Rating:</label>
+                <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" oninput="ratingOutput.value = page_rating.value">
+                <output name="ratingOutput" id="ratingOutput">5</output>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>    
+    <footer>
+        <p id="copyright-year">&copy; <span id="current-year"></span>| Jonah West | Arizona, United States of America</p>
+        <p id="lastModified"></p>
+        <p>Total Page Visits: <span id="page-visits"></span></p>
+    </footer>
+    <script type="text/javascript" src="scripts/getDates.js"></script>
+    <script type="text/javascript" src="scripts/formValidation.js"></script>
+</body>
+</html>
