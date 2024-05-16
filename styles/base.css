@@ -244,6 +244,89 @@ ul {
     border: 2px solid #2a6592;
 }
 
+/* Form container */
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form field labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Membership level selection */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #2a6592;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a3b55;
+}
+
+/* Error message */
+.error {
+    color: #ff0000;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Success message */
+.success {
+    color: #008000;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.membership-benefits {
+    padding: 20px;
+}
+
+.membership-benefits h2 {
+    margin-top: 0;
+    padding-left: 40px;
+    align-items: center;
+}
+
+
+
 footer {
     display: flex;
     justify-content: center;

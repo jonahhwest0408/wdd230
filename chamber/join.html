@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonah West - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Jonah West's Web Development Course Assignment Portal">
+    <meta name="author" content="Jonah West">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/larger.css">
+    <link rel="icon" type="images/favicon.ico" href="images/favicon.ico">
+
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="last-visit-message"></p>
+          <p>Last visited on: <span id="last-visit-date"></span>. Welcome back!</p>
+        </div>
+      </div>
+    <script type="text/javascript" src="../scripts/hamburger.js"></script>
+    <div class="header-container">
+        <header>
+            <img src="../images/profile-pic.webp" alt="Jonah West Logo">
+            <h1>Jonah West</h1>
+            <button id="hamburger-button" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button id="close-button" aria-label="Close navigation menu" style="display: none;">X</button>
+        </header>
+    </div>
+    <div class="nav-container" id="main-nav">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="chamber/chamber-site-plan.html">Site Plan</a>
+            <a href="form.html">Form</a>
+        </nav>
+    </div>
+    <main>
+        <div class="form-container">
+            <form action="thankyou.html" method="get">
+                <label for="first-name">*Applicant's First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+        
+                <label for="last-name">*Applicant's Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+        
+                <label for="position">*Applicant's Title or Position:</label>
+                <input type="text" id="position" name="position" pattern="[a-zA-Z\s-]{7,}" required>
+        
+                <label for="email">*Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+        
+                <label for="mobile">*Mobile Phone Number:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+        
+                <label for="business-name">*Business/Organization's Name:</label>
+                <input type="text" id="business-name" name="business-name" required>
+        
+                <label for="membership-level">*Membership Level:</label>
+                <select id="membership-level" name="membership-level" required>
+                    <option value="NP Membership">NP Membership (Free)</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+        
+                <label for="description">*Business/Organization's Description:</label>
+                <textarea id="description" name="description"></textarea>
+        
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+        
+                <button type="submit">Submit</button>
+            </form>
+            <div class="membership-benefits">
+                <h2>Membership Benefits</h2>
+                <ul>
+                    <li>NP Membership: No fee Limited benefits</li>
+                    <li>Bronze Membership: $10 Basic benefits</li>
+                    <li>Silver Membership: $20 Enhanced benefits</li>
+                    <li>Gold Membership: $35 Premium benefits</li>
+                </ul>
+            </div>
+        </div>
+    </main>    
+    <footer>
+        <p id="copyright-year">&copy; <span id="current-year"></span>| Jonah West | Arizona, United States of America</p>
+        <p id="lastModified"></p>
+        <p>Total Page Visits: <span id="page-visits"></span></p>
+    </footer>
+    <script type="text/javascript" src="../scripts/getDates.js"></script>
+    <script type="text/javascript" src="../scripts/lastVisit.js"></script>
+    <script type="text/javascript" src="../scripts/formFunctionality.js"></script>
+
+</body>
+</html>
