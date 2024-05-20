@@ -21,4 +21,4 @@ function updatePageVisits() {
 
 window.onload = updatePageVisits;
 
-
+updatePageVisits();
