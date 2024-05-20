@@ -5,12 +5,23 @@
         "links": [
           {
             "url":"week01/holygrail.html",
-            "title":"HG Layout"
+            "title":"Grail"
           },
           {
             "url":"week01/media-query.html",
-            "title":"mQueries"
+            "title":"Media Queries"
           }
         ]
-      }
-    ]}
+      },
+      {
+        "week": "Week 2",
+        "links": [
+            {
+                "url": "week2/design.html",
+                "title": "Design"
+            }
+        ]
+    }
+
+    ]
+}

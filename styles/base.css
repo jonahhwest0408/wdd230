@@ -325,6 +325,16 @@ input[type="submit"]:hover {
     align-items: center;
 }
 
+.card:nth-of-type(1) ul {
+    background-color: #fff;
+    
+}
+
+.card:nth-of-type(1) a {
+    color: blue;
+    
+}
+
 .card:nth-of-type(2) {
     background-color: #fff;
     color: #333;
