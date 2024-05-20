@@ -325,6 +325,42 @@ input[type="submit"]:hover {
     align-items: center;
 }
 
+.card:nth-of-type(2) {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #1a3b55; 
+    border-radius: 10px;
+    padding: 20px; 
+    margin: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card:nth-of-type(2) h2 {
+    color: #1a3b55;
+    margin: .3rem 0;
+}
+
+
+.card:nth-of-type(2) #description {
+    text-transform: capitalize;
+    color: #1a3b55;
+    margin: .3rem 0;
+}
+
+.card:nth-of-type(2) #temperature {
+    font-size: 2rem;
+    color: #1a3b55;
+    margin: .3rem 0;
+}
+
+.card:nth-of-type(2) #graphic {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto; 
+    display: block;
+    text-align: center;
+}
 
 
 footer {
