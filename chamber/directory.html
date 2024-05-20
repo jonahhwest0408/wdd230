@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Site Plan</title>
+    <meta name="description" content="Jonah West's Paradise Valley Chamber of Commerce Site">
+    <meta name="author" content="Jonah West">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/chamber-base.css">
+    <link rel="stylesheet" href="styles/chamber-larger.css">
+    <link rel="icon" type="images/icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <button id="menu-button" class="menu-button">
+          <span class="sr-only">Open menu</span>
+          <span aria-hidden="true" class="menu-icon"></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+          <span class="close-button">
+            <button>X</button>
+          </span>
+        </nav>
+      </header>
+    <main>
+        <div class="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        <div id="member-container" class="grid-view"></div>
+    </main>
+    <footer>
+        <p id="copyright-year">&copy; <span id="current-year"></span>| Jonah West | WDD230 | Arizona, United States of America</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/members.js"></script>
+</body>
+</html>
