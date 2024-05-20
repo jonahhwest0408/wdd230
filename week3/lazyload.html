@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            width: 400px;
+            height: auto;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            margin-bottom: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Load Images</h1>
+    </header>
+
+    <main>
+        <img src="../images/laie-temple.webp" loading="lazy" alt="Image 1">
+        <img src="../images/laie-temple.webp" loading="lazy" alt="Image 2">
+        <img src="../images/laie-temple.webp" loading="lazy" alt="Image 3">
+        <img src="../images/laie-temple.webp" loading="lazy" alt="Image 4">
+        <img src="../images/laie-temple.webp" loading="lazy" alt="Image 5">
+        <img src="../images/laie-temple.webp" loading="lazy" alt="Image 6">
+
+    </main>
+
+    <footer>
+        <p id="last-modified"></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const lastModified = document.lastModified;
+            document.getElementById("last-modified").textContent = "Last Modified: " + lastModified;
+        });
+    </script>
+</body>
+
+</html>

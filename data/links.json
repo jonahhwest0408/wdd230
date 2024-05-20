@@ -1,27 +1,89 @@
 {
     "weeks": [
-      {
-        "week": "Week 1",
-        "links": [
-          {
-            "url":"week01/holygrail.html",
-            "title":"Grail"
-          },
-          {
-            "url":"week01/media-query.html",
-            "title":"Media Queries"
-          }
-        ]
-      },
-      {
-        "week": "Week 2",
-        "links": [
-            {
-                "url": "week2/design.html",
-                "title": "Design"
-            }
-        ]
-    }
-
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Grail"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Queries"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week2/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "index.html",
+                    "title": "Menu"
+                },
+                {
+                    "url": "week2/bom.html",
+                    "title": "BOM Design"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "index.html",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week3/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "week3/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week3/BOM.html",
+                    "title": "Local Storage"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "week4/images/assignment.png",
+                    "title": "Assignment"
+                },
+                {
+                    "url": "week4/tablebuild.html",
+                    "title": "Tables"
+                },
+                {
+                    "url": "week4/Form-start/index.html",
+                    "title": "Forms"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "week5/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week5/prophets.html",
+                    "title": "Fetch API"
+                },
+                {
+                    "url": "week5/weather.html",
+                    "title": "Weather API"
+                }
+            ]
+        }
     ]
 }

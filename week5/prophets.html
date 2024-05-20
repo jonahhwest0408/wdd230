@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latter-day Prophets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Latter-day Prophets</h1>
+    </header>
+    <main>
+        <div id="cards"></div>
+    </main>
+    <footer>
+        [Your Name] | Latter-day Prophets
+    </footer>
+    <script>
+        const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+        const cards = document.querySelector('#cards');
+
+        const getProphetData = async () => {
+            const response = await fetch(url);
+            const data = await response.json();
+            console.table(data);
+            displayProphets(data.prophets);
+        }
+
+        const displayProphets = (prophets) => {
+            prophets.forEach((prophet) => {
+                const card = document.createElement('section');
+                const fullName = document.createElement('h2');
+                const portrait = document.createElement('img');
+
+                fullName.textContent = `${prophet.firstName} ${prophet.lastName}`;
+                portrait.setAttribute('src', prophet.imageurl);
+                portrait.setAttribute('alt', `${prophet.firstName} ${prophet.lastName}`);
+                portrait.setAttribute('loading', 'lazy');
+                portrait.setAttribute('width', '200');
+                portrait.setAttribute('height', '250');
+
+                card.appendChild(fullName);
+                card.appendChild(portrait);
+                
+                cards.appendChild(card);
+            });
+        }
+
+        getProphetData();
+    </script>
+</body>
+</html>

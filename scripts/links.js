@@ -32,7 +32,6 @@ function generateLinksHTML(linksData) {
     });
 }
 
-// Fetch links data and generate HTML when the page loads
 window.onload = async function() {
     const linksData = await getLinksData();
     generateLinksHTML(linksData);
