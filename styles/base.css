@@ -332,8 +332,22 @@ input[type="submit"]:hover {
 
 .card:nth-of-type(1) a {
     color: blue;
-    
+
 }
+
+#learning-activities-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#learning-activities-list li {
+    margin: 5px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
 
 .card:nth-of-type(2) {
     background-color: #fff;
