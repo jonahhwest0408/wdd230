@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Paradise Valley Chamber of Commerce</title>
+    <meta name="description" content="Contact the Paradise Valley Chamber of Commerce for inquiries, partnerships, and more.">
+    <meta name="author" content="Paradise Valley Chamber of Commerce">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/chamber-base.css">
+    <link rel="stylesheet" href="styles/chamber-larger.css">
+    <link rel="icon" type="images/icon" href="images/favicon.ico">
+    <style>
+        /* Additional styles specific to the contact page can be added here */
+    </style>
+</head>
+<body>
+    <header>
+        <button id="menu-button" class="menu-button">
+            <span class="sr-only"></span>
+            <span aria-hidden="true" class="menu-icon"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+            <span class="close">
+                <button>X</button>
+            </span>
+        </nav>
+    </header>
+    
+    <h1>Contact Us</h1>
+    <div class="main-content">
+        <div class="articles">
+            <div class="faq">
+                <h2>Contact Information</h2>
+                <p>Address: 123 Main Street, Paradise Valley, AZ</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@paradisevalleychamber.com</p>
+            </div>
+            <div class="current-events">
+                <h2>Contact Form</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="copyright-year">&copy; <span id="current-year"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script type="text/javascript" src="scripts/lastModified.js"></script>
+</body>
+</html>

@@ -68,6 +68,31 @@ body h1 {
     color: rgb(219, 134, 54);
 }
 
+.menu-button  {
+    display: none;
+}
+
+.nav-list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin: 0 5px; /* Adjust the margin as needed */
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: rgb(138, 71, 8);
+    font-size: 25px;
+}
+
+.close {
+    display: none;
+}
+
 /* FAQ Section */
 .faq ul {
     list-style: none;
@@ -350,6 +375,50 @@ body h1 {
 
 .member-info a:hover {
     text-decoration: underline;
+}
+
+.current-events form {
+    background-color: rgba(204, 196, 192, 0.5); /* Light brown background */
+    padding: 70px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.current-events form label {
+    font-size: 20px;
+    color: rgb(138, 71, 8); /* Dark brown text color */
+    margin-bottom: 10px;
+    display: block;
+}
+
+.current-events form input[type="text"],
+.current-events form input[type="email"],
+.current-events form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(138, 71, 8); /* Dark brown border */
+}
+
+.current-events form textarea {
+    resize: none; /* Prevent textarea from being resized */
+}
+
+.current-events form button {
+    background-color: rgb(100, 14, 14); /* Dark red background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.current-events form button:hover {
+    background-color: rgb(235, 60, 60); /* Lighter red background on hover */
+    transform: scale(1.05);
 }
 
 /* Footer */
