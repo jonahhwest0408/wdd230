@@ -16,21 +16,21 @@
 <body>
     <header>
         <button id="menu-button" class="menu-button">
-          <span class="sr-only">Open menu</span>
-          <span aria-hidden="true" class="menu-icon"></span>
+            <span class="sr-only"></span>
+            <span aria-hidden="true" class="menu-icon"></span>
         </button>
         <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="../index.html">Home</a></li>
-            <li class="nav-item"><a href="#">About</a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
-          </ul>
-          <span class="close-button">
-            <button>X</button>
-          </span>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+            <span class="close">
+                <button>X</button>
+            </span>
         </nav>
-      </header>
-
+    </header>
+    
     <h1>Paradise Valley Chamber of Commerce</h1>
     <div class="social-media-links">
         <ul>
@@ -46,27 +46,30 @@
     <div class="hero-p">
         <p>The Paradise Valley Chamber of Commerce serves as a pivotal force in driving regional economic growth, fostering leadership initiatives, and advocating for the vibrant community of Paradise Valley. As a catalyst for business success, we provide invaluable member services, spearhead economic and community development efforts, and champion public policies that harmonize economic prosperity with community well-being.</p>
     </div>
-    <div class="articles">
-        <div class="faq">
-            <h2>FAQ</h2>
-            <ul>
-                <li>What events will the chamber be holding this month that promote business-to-business networking?</li>
-                <li>How can I become a member of the Paradise Valley Chamber of Commerce, and what are the benefits of membership for my business?</li>
-                <li>How can I get involved in volunteering or serving on committees within the Chamber to contribute to the community and network with other professionals?</li>
-            </ul>
-        </div>
-        <div class="current-events">
-            <h2>Current Events</h2>
-            <ul>
-                <li>Join us for an exciting networking event aimed at connecting local businesses in the community. This event provides an excellent opportunity for entrepreneurs, business owners, and professionals to meet and build valuable relationships. Whether you're looking for potential clients, partners, or collaborators, this event is the perfect platform to expand your network and grow your business. Don't miss out on this chance to connect with like-minded individuals and explore new opportunities for success!</li>
-                <li>Our Small Business Workshop Series is back by popular demand! Designed to empower entrepreneurs and small business owners with the knowledge and skills needed to thrive in today's competitive market, this series covers a range of topics essential for success. From marketing strategies and financial management to digital tools and customer service techniques, each workshop offers valuable insights and practical tips to help you take your business to the next level. Whether you're a startup or an established business, these workshops are a must-attend for anyone looking to grow and succeed in the business world.</li>
-            </ul>
-        </div>
-        <div class="spotlight">
-            <h2>Spotlight</h2>
-            <p>Spotlight (Fake content)- Our Small Business Workshop Series is back by popular demand! Designed to empower entrepreneurs and small business owners with the knowledge and skills needed to thrive in today's competitive market, this series covers a range of topics essential for success. From marketing strategies and financial management to digital tools and customer service techniques, each workshop offers valuable insights and practical tips to help you take your business to the next level. Whether you're a startup or an established business, these workshops are a must-attend for anyone looking to grow and succeed in the business world.</p>
+    <div class="main-content">
+        <div class="articles">
+            <div class="faq">
+                <h2>FAQ</h2>
+                <ul>
+                    <li>What events will the chamber be holding this month that promote business-to-business networking?</li>
+                    <li>How can I become a member of the Paradise Valley Chamber of Commerce, and what are the benefits of membership for my business?</li>
+                    <li>How can I get involved in volunteering or serving on committees within the Chamber to contribute to the community and network with other professionals?</li>
+                </ul>
+            </div>
+            <div class="current-events">
+                <h2>Current Events</h2>
+                <ul>
+                    <li>Join us for an exciting networking event aimed at connecting local businesses in the community. This event provides an excellent opportunity for entrepreneurs, business owners, and professionals to meet and build valuable relationships. Whether you're looking for potential clients, partners, or collaborators, this event is the perfect platform to expand your network and grow your business. Don't miss out on this chance to connect with like-minded individuals and explore new opportunities for success!</li>
+                    <li>Our Small Business Workshop Series is back by popular demand! Designed to empower entrepreneurs and small business owners with the knowledge and skills needed to thrive in today's competitive market, this series covers a range of topics essential for success. From marketing strategies and financial management to digital tools and customer service techniques, each workshop offers valuable insights and practical tips to help you take your business to the next level. Whether you're a startup or an established business, these workshops are a must-attend for anyone looking to grow and succeed in the business world.</li>
+                </ul>
+            </div>
+            <div class="spotlight">
+                <h2>Spotlight</h2>
+                <p>Spotlight (Fake content)- Our Small Business Workshop Series is back by popular demand! Designed to empower entrepreneurs and small business owners with the knowledge and skills needed to thrive in today's competitive market, this series covers a range of topics essential for success. From marketing strategies and financial management to digital tools and customer service techniques, each workshop offers valuable insights and practical tips to help you take your business to the next level. Whether you're a startup or an established business, these workshops are a must-attend for anyone looking to grow and succeed in the business world.</p>
+            </div>
         </div>
     </div>
+    <p class="signup-header">Want to join our community and make a difference?</p>
     <button id="signup-button">Sign up to be a member</button>
     <div id="signup-modal" class="modal">
         <div class="modal-content">
@@ -85,12 +88,21 @@
         </div>
     </div>
     <div id="weather">Weather in Paradise Valley</div>
+<section class="card">
+    <div class="current-weather-card">
+        <h2 id="town"></h2>
+        <img id="graphic" alt="Weather Icon">
+        <p id="description"></p>
+        <p id="temperature"></p>
+    </div>
+    <div id="forecast"></div>
+</section>
 
     <footer>
-        <p id="copyright-year">&copy; <span id="current-year"></span>| Jonah West | WDD230 | Arizona, United States of America</p>
+        <p id="copyright-year">&copy; <span id="current-year"></span></p>
         <p id="lastModified"></p>
     </footer>
-
     <script src="scripts/chamber.js"></script>
+    <script type="text/javascript" src="../scripts/weather.js"></script>
 </body>
 </html>

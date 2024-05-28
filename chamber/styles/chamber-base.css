@@ -1,14 +1,10 @@
+/* General Styles */
 body {
     background: rgb(250, 248, 245);
     font-family: 'Bebas Neue', sans-serif;
-  }
-  
-  .bebas-neue-regular {
-      font-family: "Bebas Neue", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-  
+}
+
+/* Centering the H1 */
 body h1 {
     display: flex;
     justify-content: center;
@@ -17,6 +13,7 @@ body h1 {
     color: rgb(219, 134, 54);
 }
 
+/* Social Media Links */
 .social-media-links ul {
     display: flex;
     justify-content: center;
@@ -36,7 +33,7 @@ body h1 {
 }
 
 .social-media-links li a:hover {
-    background-color: rgb(100, 14, 14)
+    background-color: rgb(100, 14, 14);
 }
 
 .social-media-links img {
@@ -45,12 +42,12 @@ body h1 {
     padding: 25px;
 }
 
-
+/* Hero Image */
 .hero-image {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     border: 1px solid #ccc;
 }
 
@@ -71,59 +68,138 @@ body h1 {
     color: rgb(219, 134, 54);
 }
 
-
+/* FAQ Section */
 .faq ul {
     list-style: none;
     padding: 0; 
-  }
-  
-  .faq li {
+}
+
+.faq li {
     color: rgb(100, 14, 14); 
     padding: 10px;
     border-bottom: 1px solid #ccc; 
-  }
-  
+}
+
 .faq h2 {
     color: rgb(100, 14, 14);
 }
 
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 21px;
+}
 
+/* Articles Section */
 .articles {
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-auto-flow: column;
+    gap: 40px;
+    padding: 20px;
 }
 
+.articles h2 {
+    text-align: center;
+    color: rgb(100, 14, 14);
+}
 
-  .current-events ul {
+/* Current Events */
+.current-events ul {
     list-style: none; 
     padding: 0; 
-  }
-  
-  .current-events li {
+}
+
+.current-events li {
     color: rgb(100, 14, 14);
     padding: 10px; 
     border-bottom: 1px solid #ccc; 
-  }
+}
 
-  .current-events h2 {
+.current-events h2 {
     color: rgb(100, 14, 14);
-  }
+}
 
+/* Weather Section */
 #weather {
     color: rgb(219, 134, 54);
     font-size: 40px;
-  }
+    text-align: center;
+}
 
+.card {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(204, 196, 192);
+    font-size: 1.5rem;
+    color: rgb(100, 14, 14);
+}
+
+.current-weather-card {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Make the card less wide */
+    margin: 0 auto; /* Center the card */
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.forecast-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 0 10px; 
+}
+
+/* Spotlight Section */
 .spotlight {
     color: rgb(100, 14, 14);
 }
 
-#signup-button:hover {
-    background-color: rgba(176, 85, 16,  0.75);
+/* Signup Button */
+.signup-header {
+    text-align: center;
+    color: rgb(219, 134, 54);
+    font-size: 27px;
 }
 
-  .modal {
+#signup-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(100, 14, 14);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 60px;
+}
+
+#signup-button:hover {
+    background-color: rgb(235, 60, 60);
+}
+
+/* Modal */
+.modal {
     display: none; 
     position: fixed; 
     z-index: 1; 
@@ -187,6 +263,7 @@ body h1 {
     background-color: rgb(100, 14, 14);
 }
 
+/* View Toggle Buttons */
 .view-toggle {
     display: flex;
     justify-content: center;
@@ -219,7 +296,7 @@ body h1 {
     background-color: #0056b3; 
 }
 
-
+/* Member Container */
 #member-container {
     display: flex;
     flex-wrap: wrap;
@@ -275,10 +352,14 @@ body h1 {
     text-decoration: underline;
 }
 
-
+/* Footer */
 footer { 
     display: flex;
     justify-content: center;
     font-size: 30px;
     color: rgb(100, 14, 14);
+}
+
+#lastModified {
+    margin-left: 10px;
 }
