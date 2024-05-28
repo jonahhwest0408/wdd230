@@ -151,6 +151,10 @@
     color: #fff;
 }
 
+#close-button {
+  display: block;
+}
+
 .close {
   display: block;
     position: absolute;

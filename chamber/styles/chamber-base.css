@@ -116,7 +116,9 @@ body h1 {
     margin-bottom: 0;
 }
 
-
+#close-button {
+    display: none;
+}
 
 #close-banner-btn {
     display: block;
