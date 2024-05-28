@@ -23,6 +23,10 @@ header {
     height: auto;
 }
 
+#hamburger-button {
+    display: none;
+}
+
 .nav-container {
     background-color: var(--primary-color); 
 }

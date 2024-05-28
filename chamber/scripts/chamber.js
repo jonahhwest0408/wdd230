@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Functionality for signup modal
   const signupButton = document.querySelector("#signup-button");
   const signupModal = document.querySelector("#signup-modal");
+  const menuButton = document.getElementById("menu-button");
+  const closeButton = document.getElementById("close-button");
+  const nav = document.querySelector(".nav");
 
   if (signupButton && signupModal) {
-    signupButton.addEventListener("click", () => {
-      signupModal.style.display = "block";
-    });
+      signupButton.addEventListener("click", () => {
+          signupModal.style.display = "block";
+      });
   }
 
   const form = document.querySelector("form");
@@ -15,41 +17,40 @@ document.addEventListener("DOMContentLoaded", function () {
   thankYouMessage.style.color = "#32de84";
 
   if (form) {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      form.style.display = "none";
-      form.parentNode.insertBefore(thankYouMessage, form.nextSibling);
-    });
+      form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          form.style.display = "none";
+          form.parentNode.insertBefore(thankYouMessage, form.nextSibling);
+      });
   }
 
-  // Functionality for menu button and navigation
-  const menuButton = document.getElementById("menu-button");
-  const nav = document.querySelector(".nav");
-
   if (menuButton) {
-    menuButton.addEventListener("click", toggleMenu);
+      menuButton.addEventListener("click", toggleMenu);
+  }
+
+  if (closeButton) {
+      closeButton.addEventListener("click", toggleMenu);
   }
 
   function toggleMenu() {
-    const isMenuOpen = nav.classList.contains("active");
-
-    if (!isMenuOpen) {
-      nav.classList.add("active");
-    } else {
-      nav.classList.remove("active");
-    }
+      const isMenuOpen = nav.classList.contains("active");
+      if (!isMenuOpen) {
+          nav.classList.add("active");
+          menuButton.setAttribute("aria-expanded", "true");
+      } else {
+          nav.classList.remove("active");
+          menuButton.setAttribute("aria-expanded", "false");
+      }
   }
 
-  // Functionality for copyright year and last modified date
   const copyrightYear = document.querySelector("#copyright-year");
   const currentYear = new Date().getFullYear();
   if (copyrightYear) {
-    copyrightYear.textContent =
-      "© " + currentYear + " | Jonah West | WDD230 | Arizona, United States of America";
+      copyrightYear.textContent = "© " + currentYear + " | Jonah West | WDD230 | Arizona, United States of America";
   }
 
   const lastModified = document.querySelector("#lastModified");
   if (lastModified) {
-    lastModified.textContent = document.lastModified;
+      lastModified.textContent = document.lastModified;
   }
 });

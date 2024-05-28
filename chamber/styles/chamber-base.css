@@ -73,6 +73,10 @@ body h1 {
     display: none;
 }
 
+/* Nav */
+
+
+
 .nav-list {
     margin-top: 40px;
     display: flex;
@@ -81,13 +85,21 @@ body h1 {
 }
 
 .nav-item {
-    margin: 0 5px; /* Adjust the margin as needed */
+    margin: 0 5px; 
 }
 
 .nav-item a {
     text-decoration: none;
     color: rgb(138, 71, 8);
     font-size: 25px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-item a:hover {
+    background-color: #575757;
+    color: #fff;
 }
 
 .close {
@@ -147,6 +159,7 @@ body h1 {
     justify-content: center;
     padding: 20px;
     font-size: 21px;
+    color: rgb(100, 14, 14);
 }
 
 /* Articles Section */
@@ -204,8 +217,8 @@ body h1 {
     margin-bottom: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px; /* Make the card less wide */
-    margin: 0 auto; /* Center the card */
+    max-width: 300px; 
+    margin: 0 auto; 
 }
 
 #forecast {
@@ -410,7 +423,7 @@ body h1 {
 }
 
 .current-events form {
-    background-color: rgba(204, 196, 192, 0.5); /* Light brown background */
+    background-color: rgba(204, 196, 192, 0.5);
     padding: 70px;
     border-radius: 10px;
     margin-top: 20px;
@@ -418,7 +431,7 @@ body h1 {
 
 .current-events form label {
     font-size: 20px;
-    color: rgb(138, 71, 8); /* Dark brown text color */
+    color: rgb(138, 71, 8); 
     margin-bottom: 10px;
     display: block;
 }
@@ -430,15 +443,15 @@ body h1 {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid rgb(138, 71, 8); /* Dark brown border */
+    border: 1px solid rgb(138, 71, 8); 
 }
 
 .current-events form textarea {
-    resize: none; /* Prevent textarea from being resized */
+    resize: none; 
 }
 
 .current-events form button {
-    background-color: rgb(100, 14, 14); /* Dark red background */
+    background-color: rgb(100, 14, 14); 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -449,9 +462,10 @@ body h1 {
 }
 
 .current-events form button:hover {
-    background-color: rgb(235, 60, 60); /* Lighter red background on hover */
+    background-color: rgb(235, 60, 60); 
     transform: scale(1.05);
 }
+
 
 /* Footer */
 footer { 
@@ -461,6 +475,11 @@ footer {
     color: rgb(100, 14, 14);
 }
 
-#lastModified {
+#lastModified, #copyright-year, #current-year{
     margin-left: 10px;
+    color: rgb(100, 14, 14);
 }
+
+
+
+
