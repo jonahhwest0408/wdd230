@@ -59,6 +59,7 @@ body h1 {
 .hero-p {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .hero-p p {
@@ -92,6 +93,37 @@ body h1 {
 .close {
     display: none;
 }
+
+#meet-and-greet-banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(49, 133, 49);
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+
+
+#close-banner-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(49, 133, 49);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 60px;
+}
+
+#close-banner-btn:hover {
+    background-color: rgb(235, 60, 60);
+}
+
 
 /* FAQ Section */
 .faq ul {
