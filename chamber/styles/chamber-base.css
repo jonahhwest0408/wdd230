@@ -64,7 +64,7 @@ body h1 {
 
 .hero-p p {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     margin: 0 auto;
     color: rgb(219, 134, 54);
 }
@@ -252,6 +252,10 @@ body h1 {
     font-size: 27px;
 }
 
+#meet-and-greet-banner p { 
+    color: green;
+}
+
 #signup-button {
     display: block;
     margin: 20px auto;
@@ -282,12 +286,16 @@ body h1 {
     background-color: rgba(0, 0, 0, 0.5); 
 }
 
+.modal-content h2, p, input, label {
+    color: rgb(100, 14, 14);;
+}
+
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto; 
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    border: 5px solid #888;
+    width: 100%;
     max-width: 800px;
 }
 
@@ -317,7 +325,7 @@ body h1 {
 .modal input[type="text"],
 .modal input[type="email"],
 .modal input[type="password"] {
-    width: 100%;
+    width: 97%;
     padding: 10px;
     margin-bottom: 10px;
 }

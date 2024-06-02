@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const signupButton = document.querySelector("#signup-button");
   const signupModal = document.querySelector("#signup-modal");
+  const signupClose = document.querySelector('#signup-close .close')
   const menuButton = document.getElementById("menu-button");
   const closeButton = document.getElementById("close-button");
   const nav = document.querySelector(".nav");
@@ -10,6 +11,18 @@ document.addEventListener("DOMContentLoaded", function () {
           signupModal.style.display = "block";
       });
   }
+
+  if (signupClose) {
+    signupClose.addEventListener("click", () => {
+        signupModal.style.display = "none";
+        });
+  }
+
+  window.addEventListener("click", (event) => {
+    if (event.target === signupModal) {
+        signupModal.style.display = "none";
+    }
+});
 
   const form = document.querySelector("form");
   const thankYouMessage = document.createElement("p");
@@ -42,6 +55,17 @@ document.addEventListener("DOMContentLoaded", function () {
           menuButton.setAttribute("aria-expanded", "false");
       }
   }
+
+  const mediaQuery = window.matchMedia("(min-width: 1024px)");
+  function handleTabletChange(e) {
+      if (e.matches) {
+          closeButton.style.display = "none";
+      } else {
+          closeButton.style.display = "block";
+      }
+  }
+  mediaQuery.addEventListener("change", handleTabletChange);
+  handleTabletChange(mediaQuery);
 
   const copyrightYear = document.querySelector("#copyright-year");
   const currentYear = new Date().getFullYear();
