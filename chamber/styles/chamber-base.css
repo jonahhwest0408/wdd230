@@ -191,9 +191,15 @@ body h1 {
     color: rgb(100, 14, 14);
 }
 
+.spotlight h2 {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
 #member-spotlight {
     display: flex;
     justify-content: space-around;
+    border-bottom: 1px solid #ccc;
 }
 
 /* Weather Section */
