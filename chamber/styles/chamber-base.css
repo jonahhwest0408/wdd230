@@ -10,7 +10,7 @@ body h1 {
     justify-content: center;
     font-size: 45px;
     margin-bottom: 0;
-    color: rgb(219, 134, 54);
+    color: rgb(189, 103, 22);
 }
 
 /* Social Media Links */
@@ -66,7 +66,7 @@ body h1 {
     text-align: center;
     font-size: 30px;
     margin: 0 auto;
-    color: rgb(219, 134, 54);
+    color: rgb(189, 103, 22);
 }
 
 .menu-button  {
@@ -74,9 +74,6 @@ body h1 {
 }
 
 /* Nav */
-
-
-
 .nav-list {
     margin-top: 40px;
     display: flex;
@@ -90,7 +87,7 @@ body h1 {
 
 .nav-item a {
     text-decoration: none;
-    color: rgb(138, 71, 8);
+    color: black;
     font-size: 25px;
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s;
@@ -196,7 +193,7 @@ body h1 {
 
 /* Weather Section */
 #weather {
-    color: rgb(219, 134, 54);
+    color: rgb(189, 103, 22);
     font-size: 40px;
     text-align: center;
 }
@@ -248,7 +245,7 @@ body h1 {
 /* Signup Button */
 .signup-header {
     text-align: center;
-    color: rgb(219, 134, 54);
+    color: rgb(189, 103, 22);
     font-size: 27px;
 }
 
