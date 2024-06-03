@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Thomas Dean",
+        "description": "Gold Member",
+        "level": "Silver"
+    },
+    {
+        "name": "Alison Nichols",
+        "description": "Gold Member",
+        "level": "Gold"
+    },
+    {
+        "name": "Jacob Smith",
+        "description": "Gold Member",
+        "level": "Gold"
+    }
+]
